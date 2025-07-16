@@ -6,6 +6,10 @@ MACOS_MIN_OS_VERSION=13.3
 VISIONOS_MIN_OS_VERSION=1.0
 TVOS_MIN_OS_VERSION=16.4
 
+# Explicitly set C and C++ compiler paths
+export CC="$(xcrun -find clang)"
+export CXX="$(xcrun -find clang++)"
+
 BUILD_SHARED_LIBS=OFF
 WHISPER_BUILD_EXAMPLES=OFF
 WHISPER_BUILD_TESTS=OFF
